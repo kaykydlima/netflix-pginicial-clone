@@ -7,40 +7,46 @@
 body{
     font-family: 'Arial';
 }
+
 /* seção header */
 .showcase{
     width: 100%;
     height: 100vh;
     position: relative;
     background: url('/img/background.jpg') no-repeat center center/cover;
+
 }
+
 .showcase::after{
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0,0,0,.7);
+    background:rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100vh;
     z-index: 1;
-    /* box-shadow: inset 120px 100px 250px #000, inset -120px -100px 250px #000 */;
 }
+
 /* menu */
 .showcase-top{
-    position:relative;
+    position: relative;
     z-index: 2;
     padding: 26px 0 0 55px;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .showcase-top #logo{
     height: 35px;
     width: 140px;
 }
+
 .showcase-top-menu{
     margin-right: 80px;
 }
+
 .showcase-top .submit{
     background: #dc0510;
     border: none;
@@ -48,6 +54,7 @@ body{
     color: #fff;
     padding: 5px 16px;
 }
+
 .showcase-top select{
     background: transparent;
     color: #fff;
@@ -55,11 +62,13 @@ body{
     padding: 5px 10px;
     border: 1px solid #fff;
     border-radius: 1px;
-    height:36px; 
+    height: 36px;
 }
+
 .showcase-top select option{
     background: #303030;
 }
+
 /* conteudo banner */
 .get-started-container{
     z-index: 2;
@@ -73,21 +82,25 @@ body{
     top: 180px;
     color: white;
 }
+
 .get-started-container h1{
     font-size: 3.1rem;
     font-weight: 700;
     line-height: 1.1;
 }
+
 .get-started-container .parag-1{
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.1;
     margin-bottom: 30px;
 }
+
 .get-started-container h3{
     font-size: 1.2rem;
     margin-bottom: 20px;
 }
+
 .input-email{
     display: flex;
     align-items: center;
@@ -95,6 +108,7 @@ body{
     justify-content: center;
     width: 100%;
 }
+
 .get-started-container input{
     width: 32.5%;
     height: 60px;
@@ -103,83 +117,326 @@ body{
     margin-right: 2px;
     padding-left: 10px;
 }
-.get-started-container button{
+
+.get-started-container button {
     height: 60px;
     border: none;
     background: #dc0510;
     font-size: 1.6rem;
     font-weight: 500;
-    color:#fff;
+    color: #fff;
     padding: 0 30px 0 30px;
 }
-.get-started-container button:hover{
+
+.get-started-container button:hover {
     background: #f40612;
 }
+
+/* conteudo principal do site */
+/* APROVEITE NA TV */
+.content {
+    background: #000;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 3.1rem;
+}
+
+.content p {
+    font-size: 1.6rem;
+}
+
+.section {
+    border-top: 8px solid #222;
+    height: 75vh;
+}
+
+.section-container {
+    display: flex;
+    align-items: center;
+}
+
+/* parte dos textos */
+.section-container .container-txt {
+    width: 50%;
+}
+
+/* parte dos videos */
+.section-container .container-media {
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+    height: 450px;
+}
+
+.section-container .container-media img {
+    width: 100%;
+    position: absolute;
+}
+
+.section-container .container-media .video {
+    width: 74%;
+    margin-left: 13%;
+    margin-top: 16%;
+}
+
+/* BAIXE SÉRIES PARA ASSISTIR */
+
+.section-container-reverse {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.section-container-reverse .container-txt-reverse {
+    width: 50%;
+    max-width: 500px;
+}
+
+.section-container-reverse .container-media-reverse {
+    width: 50%;
+}
+
+.section-container-reverse .container-media-reverse .image-reverse {
+    width: 100%;
+}
+
+.section-container-reverse .container-media-reverse .container-media-float {
+    border: 2px solid #222;
+    border-radius: 10px;
+    background: #000;
+    width: 60%;
+    padding: 10px;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    top: -125px;
+    margin-left: 20%;
+}
+
+/* imagens container-media-float */
+.section-container-reverse .container-media-reverse .container-media-float img {
+    width: 18%;
+    height: 80%;
+}
+
+.section-container-reverse .container-media-reverse .container-media-float .download-icon {
+    width: 50px;
+    height: 50px;
+}
+
+/* textos containet-media-float */
+.section-container-reverse .container-media-reverse .container-media-float .txt-media-float p {
+    margin-bottom: 0;
+}
+
+.section-container-reverse .container-media-reverse .container-media-float .txt-media-float .p1 {
+    font-weight: bold;
+    letter-spacing: -0.2px;
+    font-size: 1em;
+}
+
+.section-container-reverse .container-media-reverse .container-media-float .txt-media-float .p2 {
+    font-size: .9em;
+    color: rgb(0, 132, 255);
+    letter-spacing: -0.2px;
+}
+
+/* ASSISTA QUANDO QUISER */
+
+.media {
+    margin-top: 50px;
+}
+
+.media video {
+    width: 62%;
+    margin-left: 18%;
+    margin-top: 8%;
+}
+
+/* CRIE PERFIS PARA CRIANÇAS */
+.child-profile{
+    width: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /* css responsivo */
-@media(max-width: 943px){
+@media(max-width: 943px) {
+
     /* conteudo banner */
-    .get-started-container{
-        top: 90px;
+    .get-started-container {
+        top: 100px;
     }
-    .get-started-container h1{
-        font-size: 3.4rem;
+
+    .get-started-container h1 {
+        font-size: 3.1rem;
     }
-    .get-started-container .parag-1{
+
+    .get-started-container .parag-1 {
         font-size: 1.5rem;
     }
-    .get-started-container h3{
+
+    .get-started-container h3 {
         font-size: 1rem;
     }
-    .input-email{
+
+    .input-email {
         display: flex;
         flex-direction: column;
     }
-    .get-started-container input{
+
+    .get-started-container input {
         margin-right: 0;
         margin-bottom: 10px;
         width: 55%;
     }
-    .get-started-container button{
+
+    .get-started-container button {
         width: 20%;
         font-size: 1.3rem;
         padding: 0 10px 0 10px;
     }
+    /* conteúdo principal */
+    .section{
+        height: 115vh;
+    }
+    .section-container, .section-container-reverse{
+        flex-direction: column;
+    }
+    .section-container .container-txt{
+        width: 100%;
+        height: 100px;
+        z-index: 2;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 25px;
+    }
+    .section-container .container-media{
+        width: 100%;
+    }
+    .section-container-reverse .container-media-reverse{
+        width: 100%;
+    }
+    .section-container-reverse .container-txt-reverse{
+        width: 100%;
+        max-width: 1000px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    /* conteúdo principal imagens */
+    /* APROVEITE NA TV E ASSISTA EM QUALQUER LUGAR IMG */
+    .section-container .container-media img{
+        width: 90%;
+        margin-left: 4%;
+    }
+    /* BAIXE SÉRIES PARA ASSISTIR OFFLINE IMG */
+    .section-container-reverse .container-media-reverse .image-reverse{
+        width: 85%;
+        margin-left: 4%;
+    }
+        /* BOX FLUTUANTE */
+        .section-container-reverse .container-media-reverse .container-media-float{
+            height: 100px;
+            margin-left: 17%;
+        } 
+        .section-container-reverse .container-media-reverse .container-media-float img{
+            height: 100%;
+        }
+    /* CRIE PERFIS PARA CRIANÇAS IMG */
+    .child-profile{
+        width: 85%;
+        margin-left: 10%;
+    }
+    /* Conteúdo principal vídeos */
+    /* ASSISTA ONDE QUISER */
+    .media video {
+        width: 56%;
+        margin-left: 20%;
+        margin-top: 7%;
+    }
+    .section-container .container-media .video {
+        width: 66%;
+        margin-left: 16%;
+        margin-top: 14%;
+    }
+    /* fontes conteudo principal */
+    .content h1 {
+        font-size: 2.9rem;
+    }    
+    .content p {
+        font-size: 1.3rem;
+    }
 }
-@media(max-width:690px){
+
+@media(max-width: 770px){
+    /* conteudo principal */
+    .section{
+        height: 100vh;
+    }
+}
+
+@media(max-width:690px) {
+
     /* menu */
-    .showcase-top{
+    .showcase-top {
         padding: 26px 0 0 25px;
     }
-    .showcase-top .submit{
+
+    .showcase-top .submit {
         position: relative;
         right: 25px;
         padding: 2px 10px;
     }
-    .showcase-top select{
+
+    .showcase-top select {
         position: relative;
         right: 40px;
         padding: 2px 10px;
         margin-right: 0;
     }
-    .showcase-top-menu{
+
+    .showcase-top-menu {
         margin-right: 0;
     }
+
     /* conteudo banner */
-    .get-started-container h1{
+    .get-started-container h1 {
         font-size: 2.8rem;
     }
-    .input-email{
+
+    .input-email {
         flex-direction: column;
     }
-    .get-started-container input{
+
+    .get-started-container input {
         margin-right: 0;
         margin-bottom: 10px;
         width: 75%;
     }
-    .get-started-container button{
+
+    .get-started-container button {
         width: 20%;
         font-size: 1.3rem;
         padding: 0 10px 0 10px;
@@ -187,84 +444,196 @@ body{
 
 }
 
-@media(max-width:660px){
+@media(max-width:660px) {
+
     /* menu */
-    .showcase-top{
+    .showcase-top {
         padding: 26px 0 0 25px;
     }
-    .showcase-top #logo{
-       height: 25px;
+
+    .showcase-top #logo {
+        height: 25px;
     }
-    .showcase-top .submit{
+
+    .showcase-top .submit {
         position: relative;
         right: 25px;
         padding: 2px 10px;
     }
-    .showcase-top select{
+
+    .showcase-top select {
         position: relative;
         right: 40px;
         padding: 2px 10px;
         margin-right: 0;
     }
-    .showcase-top-menu{
+
+    .showcase-top-menu {
         margin-right: 0;
     }
+
     /* conteudo banner */
-    .get-started-container{
-        top: 70px;
+    .get-started-container {
+        top: 90px;
     }
-    .get-started-container h1{
+
+    .get-started-container h1 {
         font-size: 2.5rem;
     }
-    .get-started-container .parag-1{
+
+    .get-started-container .parag-1 {
         font-size: 1.3rem;
         margin-bottom: 20px;
     }
-    .input-email{
+
+    .input-email {
         flex-direction: column;
     }
-    .get-started-container input{
-        margin-right: 0;
-        margin-bottom: 10px;
-        width: 70%;
-    }
-    .get-started-container button{
-        width: 20%;
-        font-size: 1.1rem;
-        padding: 0 10px 0 10px;
-    }
 
-}
-@media (max-width:550px){
-    /*conteudo banner (botao)  */
-    .get-started-container button{
-        width: 30%;
-        font-size: 1rem;
-        
-    }
-}
-@media(max-width: 400px){
-    /* menu */
-    .showcase-top #logo{
-        height: 22px;
-        width: 120px;
-    }
-    .showcase-top .submit{
-        padding: 1px 5px;
-    }
-    .showcase-top select{
-        padding: 1px 0px;
-        position: relative;
-        right: 30px;
-    }
-    /* conteudo banner */
-    .get-started-container input{
+    .get-started-container input {
         margin-right: 0;
         margin-bottom: 10px;
         width: 70%;
         height: 50px;
     }
-    .get-started-container button{
+
+    .get-started-container button {
+        width: 20%;
+        font-size: 1.1rem;
+        padding: 0 10px 0 10px;
+        height: 50px;
+    }
+
+}
+
+@media (max-width:560px) {
+
+    /*conteudo banner (botao)  */
+    .get-started-container {
+        top: 150px;
+    }
+
+    .get-started-conteiner h1 {
+        font-size: 2.2rem;
+    }
+
+    .get-started-container p {
+        font-size: 1.1rem;
+    }
+
+    .get-started-container h3 {
+        font-size: 0.95rem;
+    }
+
+    .get-started-container button {
+        font-size: 1rem;
+        width: 30%;
+        height: 40px;
+    }
+        /* conteúdo principal */
+    /* Textos */
+    .content h1 {
+        font-size: 2.1rem;
+    }    
+    .content p {
+        font-size: 1rem;
+    }
+        /* conteúdo principal imagens */
+    /* BAIXE SÉRIES PARA ASSISTIR OFFLINE IMG */
+    .section-container-reverse .container-media-reverse .image-reverse{
+        width: 100%;
+        margin-left: 1%;
+    }
+        /* BOX FLUTUANTE */
+        .section-container-reverse .container-media-reverse .container-media-float{
+            height: 70px;
+            margin-left: 20%;
+            top: -85px;
+        }
+        /* fontes box futuante */
+        .section-container-reverse .container-media-reverse .container-media-float .txt-media-float .p1{
+            font-size: 0.8rem;
+        }
+        .section-container-reverse .container-media-reverse .container-media-float .txt-media-float .p2{
+            font-size: 0.65rem;
+        }
+        /* imagens box flutuante */
+        .section-container-reverse .container-media-reverse .container-media-float img{
+            height: 100%;
+        }
+        .section-container-reverse .container-media-reverse .container-media-float .download-icon{
+            width: 13%;
+            height: 60%;
+        }
+    /* CRIE PERFIS PARA CRIANÇAS IMG */
+    .child-profile{
+        width: 85%;
+        margin-left: 10%;
+    }
+    /* Conteúdo principal vídeos */
+    /* ASSISTA ONDE QUISER */
+    .media video {
+        width: 56%;
+        margin-left: 20%;
+        margin-top: 7%;
+    }
+    .section-container .container-media .video {
+        width: 66%;
+        margin-left: 16%;
+        margin-top: 14%;
+    }
+    /* box de texto do conteudo principal */
+    .section-container .container-txt{
+        margin-top: 60px;
+    }
+    .section-container-reverse .container-txt-reverse{
+        margin-top: 60px;
+    }
+}
+
+@media(max-width: 400px) {
+
+    /* menu */
+    .showcase-top #logo {
+        height: 22px;
+        width: 120px;
+    }
+
+    .showcase-top .submit {
+        padding: 1px 5px;
+    }
+
+    .showcase-top select {
+        padding: 1px 0px;
+        position: relative;
+        right: 30px;
+    }
+
+    /* conteudo banner */
+    .get-started-container {
+        top: 150px;
+    }
+
+    .get-started-container h1 {
+        font-size: 1.6rem;
+    }
+
+    .get-started-container .parag-1 {
+        font-size: 0.8rem;
+    }
+
+    .get-started-container h3 {
+        font-size: 0.6rem;
+    }
+
+    .get-started-container input {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 70%;
+        height: 50px;
+    }
+
+    .get-started-container button {
         font-size: 0.8rem;
     }
 }
