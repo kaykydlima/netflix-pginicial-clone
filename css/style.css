@@ -264,25 +264,160 @@ body{
     width: 90%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* PERGUNTAS FREQUENTES */
+.question-container{
+    border-top: 8px solid #222;
+    background: #000;
+    padding: 60px;
+    color: #fff;
+}
+.question-container h1{
+    font-size: 3.1rem;
+    margin-bottom: 3%;
+}
+.question-container button{
+    border: none;
+    background: #303030;
+    width: 60%;
+    padding: 16px 25px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.question-container button .fa-plus{
+    font-weight: 200;
+    font-size: 2.5rem;
+}
+.question-container .answer{
+    background: #303030;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-top: -9px;
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 1.6rem;
+    display: none;
+    text-align: justify;
+}
+/* enviar email */
+.question-container h3{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    margin-top: 5%;
+}
+.question-container .input-email{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.question-container .input-email input{
+    width: 32.5%;
+    height: 60px;
+    border: none;
+    outline: none;
+    margin-right: 2px;
+    padding-left: 10px;
+}
+.question-container .input-email .btn-input-email{
+    height: 60px;
+    border: none;
+    background: #dc0510;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 0 15px 0 15px;
+    width: 15%;
+    display: block;
+    margin: 0;
+}
+.question-container .input-email .btn-input-email:hover{
+    background: #f40612;
+}
+/* FOOTER */
+footer{
+    background: #000;
+    border-top: 8px solid #222;
+    color: #757575;
+    height: 65vh;
+    overflow: hidden;
+}
+.footer-container{
+    margin-top: 5%;
+}
+/* linha 1 */
+.footer-container-row1 p{
+    margin-left: 2.8%;
+}
+.footer-container-row1 p a{
+    color: #757575;
+    max-width: 800px;
+    text-decoration: none;
+}
+.footer-container-row1 p a:hover{
+    text-decoration: underline;
+}
+/* linha 2 */
+.footer-container-row2{
+    width: 85%;
+    margin: 0 auto;
+}
+.footer-container-row2 ul li{
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+}
+.footer-container-row2 ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* selecione a lingua */
+.footer-container .btn-footer-container select{
+    background: transparent;
+    color: #757575;
+    padding: 5px 10px;
+    border: 1px solid #757575;
+    border-radius: 2px;
+    height: 55px;
+    width: 13.5%;
+    margin-left: 2.75%;
+    margin-top: 20px;
+}
+.footer-container .btn-footer-container select option{
+    background: #000;
+}
+.footer-container .btn-footer-container p{
+    font-size: 0.8rem;
+    margin-left: 2.75%;
+    margin-top: 20px;
+}
 
 
 
 
 
 /* css responsivo */
+@media(max-width: 1250px){
+    /* perguntas frequentes */
+    .question-container button{
+        width: 80%;
+    }
+    .question-container .answer{
+        width: 80%;
+    }
+    /* enviar email */
+    .question-container .input-email .btn-input-email{
+        width: 20%;
+        padding: 0 10px 0 10px;
+    }
+}
+
 @media(max-width: 943px) {
 
     /* conteudo banner */
@@ -388,12 +523,50 @@ body{
     .content p {
         font-size: 1.3rem;
     }
+    /* perguntas frequentes */
+    .question-container .answer{
+        width: 90%;
+        font-size: 1.3rem;
+    }
+    .question-container button{
+        width: 90%;
+    }
+    /* enviar email */
+    .question-container h3{
+        font-size: 1rem;
+    }
+    .question-container .input-email{
+        flex-direction: column;
+    }
+    .question-container .input-email .btn-input-email{
+        font-size: 1.3rem;
+    }
+    .question-container .input-email input{
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 55%;
+    }
 }
 
 @media(max-width: 770px){
     /* conteudo principal */
     .section{
         height: 100vh;
+    }
+    /* perguntas frequentes */
+    .question-container h1{
+        font-weight: 2.8rem;
+    }
+    .question-container button{
+        width: 100%;
+        font-size: 1.3rem;
+    }
+    .question-container .answer{
+        width: 100% ;
+        font-size: 1.8rem;
+    }
+    .question-container .fa-plus{
+        font-size: 1.8rem;
     }
 }
 
@@ -441,7 +614,17 @@ body{
         font-size: 1.3rem;
         padding: 0 10px 0 10px;
     }
-
+    /* enviar email */
+    .question-container .input-email input{
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 75%;
+    }
+    .question-container .input-email .btn-input-email{
+        width: 23%;
+        font-size: 1.3rem;
+        padding: 0 15px 0 15px;
+    }
 }
 
 @media(max-width:660px) {
@@ -491,19 +674,38 @@ body{
     }
 
     .get-started-container input {
-        margin-right: 0;
         margin-bottom: 10px;
         width: 70%;
         height: 50px;
     }
 
     .get-started-container button {
-        width: 20%;
         font-size: 1.1rem;
         padding: 0 10px 0 10px;
         height: 50px;
     }
-
+    /* perguntas frequentes */
+    .question-container h1{
+        font-size: 2.5rem;
+    }
+    .question-container .answer{
+        width: 100% ;
+        font-size: 1.3rem;
+    }
+    .question-container button{
+        font-size: 1.3rem;
+    }
+    /* enviar email */
+    .question-container .input-email .btn-input-email{
+        font-size: 1.1rem;
+        padding: 0 10px 0 10px;
+        height: 50px;
+    }
+    .question-container .input-email input{
+        margin-bottom: 10px;
+        width: 70%;
+        height: 50px;
+    }
 }
 
 @media (max-width:560px) {
@@ -589,6 +791,32 @@ body{
     .section-container-reverse .container-txt-reverse{
         margin-top: 60px;
     }
+    /* perguntas frequentes */
+    .question-container{
+        margin: 0;
+    }
+    .question-container h1{
+        font-size: 2rem;
+    }
+    .question-container .answer{
+        width: 100% ;
+        font-size: 1rem;
+    }
+    .question-container button{
+        font-size: 1rem; 
+    }
+    .question-container .fa-plus{
+        font-size: 1.3rem;
+    }
+    /* enviar email */
+    .question-container h3{
+        font-size: 0.95rem;
+    }
+    .question-container .input-email .btn-input-email{
+        font-size: 1rem;
+        width: 30%;
+        height: 40px;
+    }
 }
 
 @media(max-width: 400px) {
@@ -627,13 +855,40 @@ body{
     }
 
     .get-started-container input {
-        margin-right: 0;
-        margin-bottom: 10px;
         width: 70%;
         height: 50px;
     }
 
     .get-started-container button {
+        font-size: 0.8rem;
+    }
+    /* box de texto do conteudo principal */
+    .section{
+        height: 80vh;
+    }
+
+    /* perguntas frequentes */
+    .question-container h1{
+        font-size: 1.6rem;
+    }
+    .question-container .answer{
+        font-size: 0.8rem;
+    }
+    .question-container button{
+        font-size: 0.8rem; 
+    }
+    .question-container .fa-plus{
+        font-size: 1.1rem;
+    }
+    /* enviar email */
+    .question-container h3{
+        font-size: 0.6rem;
+    }
+    .question-container .input-email input{
+        width: 70%;
+        height: 50px;
+    }
+    .question-container .input-email .btn-input-email{
         font-size: 0.8rem;
     }
 }
